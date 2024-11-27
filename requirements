@@ -1,6 +1,5 @@
 streamlit
 pandas
-requests
 matplotlib
+requests
 plotly
-python==3.9
