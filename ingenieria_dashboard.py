@@ -1,7 +1,17 @@
 import streamlit as st
 import pandas as pd
 import requests
-import matplotlib.pyplot as plt
+
+import subprocess
+import sys
+
+try:
+    import matplotlib.pyplot as plt
+    print("matplotlib está instalado correctamente.")
+except ImportError:
+    print("matplotlib no está instalado. Procediendo a la instalación...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib"])
+    
 import matplotlib.dates as mdates
 
 # Título del dashboard
