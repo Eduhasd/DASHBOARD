@@ -3,4 +3,4 @@ requests
 pandas
 plotly
 streamlit
-pyplot
+matplotlib==3.7.1
